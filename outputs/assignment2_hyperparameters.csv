@@ -1,0 +1,16 @@
+,Logistic Regression,Random Forest
+C,0.01,-
+class_weight,None,None
+penalty,L2,-
+solver,lbfgs (default),-
+max_iter,3000,-
+CV PR-AUC mean,0.6181,0.6534
+CV PR-AUC std,0.0407,0.013
+configurations tried,18,15
+min_samples_leaf,-,1
+max_samples,-,0.5
+max_features,-,sqrt
+max_depth,-,15
+n_estimators (final),-,400
+bootstrap,-,True
+in-fold training PR-AUC,-,0.908

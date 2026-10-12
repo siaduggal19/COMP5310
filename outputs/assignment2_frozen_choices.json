@@ -1,0 +1,54 @@
+{
+  "feature_set": "D_plus_interactions",
+  "features": [
+    "lead_time",
+    "log_lead_time",
+    "arrival_date_week_number",
+    "total_nights",
+    "stays_in_weekend_nights",
+    "adults",
+    "children",
+    "babies",
+    "total_guests",
+    "is_repeated_guest",
+    "previous_cancellations",
+    "previous_bookings_not_canceled",
+    "log_adr",
+    "required_car_parking_spaces",
+    "total_of_special_requests",
+    "hotel",
+    "arrival_date_month",
+    "meal",
+    "country",
+    "market_segment",
+    "distribution_channel",
+    "reserved_room_type",
+    "deposit_type",
+    "customer_type",
+    "agent_id",
+    "agent_segment",
+    "country_segment",
+    "hotel_segment_deposit"
+  ],
+  "thresholds": {
+    "Logistic Regression": 0.19052186160475681,
+    "Random Forest": 0.2188710905453085
+  },
+  "lr_params": {
+    "classifier__C": 0.01,
+    "classifier__class_weight": null
+  },
+  "rf_params": {
+    "classifier__min_samples_leaf": 1,
+    "classifier__max_samples": 0.5,
+    "classifier__max_features": "sqrt",
+    "classifier__max_depth": 15,
+    "classifier__class_weight": null
+  },
+  "calibration": {
+    "Logistic Regression": "raw",
+    "Random Forest": "raw"
+  },
+  "seed": 5310,
+  "fast_mode": false
+}
